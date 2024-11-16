@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3 class="text-center">Formulario de Nombres</h3>
+<form method="POST" action="/ejercicio2">
+    <div class="mb-3">
+        <label for="nombre1" class="form-label">Nombre 1:</label>
+        <input type="text" class="form-control" id="nombre1" name="nombre1">
+    </div>
+    <div class="mb-3">
+        <label for="nombre2" class="form-label">Nombre 2:</label>
+        <input type="text" class="form-control" id="nombre2" name="nombre2">
+    </div>
+    <div class="mb-3">
+        <label for="nombre3" class="form-label">Nombre 3:</label>
+        <input type="text" class="form-control" id="nombre3" name="nombre3">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+{% endblock %}
